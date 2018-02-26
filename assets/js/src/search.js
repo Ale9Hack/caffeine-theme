@@ -19,7 +19,8 @@ $(function() {
         zeroResultsInfo: false,
         onKeyUp: true,
         displaySearchInfo: true,
-        result_template: "<a class=\"result\" href='{{link}}'>\n  <h2>{{title}}</h2>\n  <h4>{{pubDate}}</h4>\n</a>",
+        info_template: "<p>Resultados: {{amount}}</p>",
+        result_template: "<a class=\"result\" href='{{link}}'>\n  <h2>{{title}}</h2></a>",
         onComplete: function(query) {
             if (query.length > 0) {
                 return hideTags();

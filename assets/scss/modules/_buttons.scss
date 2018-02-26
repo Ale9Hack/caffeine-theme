@@ -103,24 +103,29 @@ ul {
     }
 }
 
-.social {
-    margin: 0;
-    &.item {
-        display: inline-block;
-        margin: 0 4px 0 0;
-        line-height: 16px;
-        a {
-            padding: 6px 8px 6px 9px;
-            @include btn-cover;
-            .label {
-                display: none;
-            }
-            i {
-                display: block;
-                font-size: 24px;
-            }
-            &:hover {
-                color: $hover-color;
+.social{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    .social-btn {
+        margin: auto;
+        display: table;
+        &.item {
+            display: inline-block;
+            line-height: 16px;
+            text-align: center;
+            a {
+                @include btn-cover;
+                .label {
+                    display: none;
+                }
+                i {
+                    display: block;
+                    font-size: 24px;
+                }
+                &:hover {
+                    color: $hover-color;
+                }
             }
         }
     }

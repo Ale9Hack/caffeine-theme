@@ -60,6 +60,7 @@
         font-size: 14px;
     }
     a {
+       letter-spacing:8px;
         h1 {
             margin: 0;
             font-family: $sans-font;
@@ -73,7 +74,7 @@
             font-size: 18px;
         }
         img {
-            width: 112px;
+            width: 152px;
             border: 2px solid $primary-color;
             @include shadow(2);
         }
@@ -81,20 +82,20 @@
 }
 
 .call-to-action-container {
-    margin: 12px 0;
+    margin: 20px 0;
 
     .navigation {
         .links {
             li {
                 display: inline-block;
-                margin: 5px;
-                border-radius: 20px;
-                background: $primary-color;
+                margin: 0 10px;
+                border-radius: 10px;
+                background: transparent;
                 color: $slate-white;
+                min-width: 100px;
                 @include btn-cover-with-border;
 
                 a {
-                    padding: 10px 20px;
                     font-size: 14px;
                     @include btn-cover;
 
